@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://interconstrutora.localhost.uz/assets/5d46d5c3/css/styles.min.css?v=1628440488"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .social-mobile-nav {
+        display: none;
+      }
+      .social-desktop-nav {
+        display: block;
+      }
+      @media only screen and (max-width: 768px) {
+        .footer__nav--link:before {
+          display: none;
+        }
+        .footer__nav--link {
+          padding-left: 0px;
+        }
+        .footer__nav--title::after {
+          border-bottom: 0;
+          width: auto;
+          padding-bottom: 0px;
+        }
+        .footer__grid--item {
+          border: 1px solid #d9d9db;
+          border-width: 1px 0px;
+          padding: 20px 0px;
+        }
+        .accordion {
+          cursor: pointer;
+          outline: none;
+          transition: 0.4s;
+          margin-bottom: 0;
+        }
+
+        .accordion:after {
+          content: "\002B";
+          float: right;
+          margin-left: 5px;
+          font-size: 26px;
+          color: #2f3240;
+        }
+
+        .active:after {
+          content: "\2212";
+        }
+
+        .panel {
+          border: 0px;
+          margin-bottom: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        .social-mobile-nav {
+          display: block;
+        }
+        .social-desktop-nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Actual code-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <div class="footer__grid--item">
+            <p class="footer__nav--title accordion">Imóveis á Venda</p>
+            <nav class="footer__nav panel">
+              <ul>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/imoveis/todos-os-estados/todas-as-cidades/todos-os-tipos-de-imoveis/todos-os-bairros?fase=lancamento"
+                    title="Lançamento"
+                    >Lançamento</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/imoveis/todos-os-estados/todas-as-cidades/todos-os-tipos-de-imoveis/todos-os-bairros?fase=em-construcao"
+                    title="Em Construção"
+                    >Em Construção</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/imoveis"
+                    title="Apartamento Pronto"
+                    >Apartamento Pronto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/imoveis"
+                    title="Casa Verde e Amarela"
+                    >Casa Verde e Amarela</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="social-desktop-nav">
+              <hr class="dashed-line" />
+              <h3 class="socials_title">
+                Siga a Inter Construtora<br />nas redes sociais
+              </h3>
+              <nav class="socials_nav">
+                <a
+                  class="socials_nav-link"
+                  href="https://www.facebook.com/interconstrutora"
+                  ><span class="icon-facebook i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://pt.linkedin.com/company/interconstrutora"
+                  ><span class="icon-linkedin i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://www.instagram.com/interconstrutora"
+                  ><span class="icon-instagram i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://www.youtube.com/channel/UC5LZ0kqIQU1tF1plHLVdlSQ"
+                  ><span class="icon-youtube i-22"></span
+                ></a>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__grid--item">
+            <p class="footer__nav--title accordion">Contato</p>
+            <nav class="footer__nav panel">
+              <ul>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://interconstrutora.legaletica.com.br/"
+                    title="Canal Confidencial"
+                    target="_blank"
+                    >Canal Confidencial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://wa.me/5508007951588"
+                    target="_blank"
+                    title="Lançamentos"
+                    >Fale com Corretor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter/codigo-de-conduta"
+                    title="Código de Conduta"
+                    >Código de Conduta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/politica-de-privacidade"
+                    title="Política de Privacidade"
+                    >Política de Privacidade</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/quero-oferecer-um-terreno"
+                    title="Quero Oferecer Terreno"
+                    >Quero Oferecer Terreno</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/trabalhe-conosco"
+                    title="Trabalhe Conosco"
+                    >Trabalhe Conosco</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="institutional/empreiteiro-parceiro"
+                    title="Seja um Empreiteiro Parceiro"
+                    target="_blank"
+                    >Seja um Empreiteiro Parceiro</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://forms.gle/RYAMEp2xszuhYYF17"
+                    title="Cadastro de Fornecedores"
+                    target="_blank"
+                    >Cadastro de Fornecedores</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__grid--item">
+            <p class="footer__nav--title accordion">Institucional</p>
+            <nav class="footer__nav panel">
+              <ul>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter/nossos-diferenciais"
+                    title="Nosso Diferencial"
+                    >Nosso Diferencial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter"
+                    title="Histórico"
+                    >Histórico</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/institutional/corporate-profile"
+                    title="Perfil Corporativo"
+                    >Perfil Corporativo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter/missao-visao-valores"
+                    title="Missão, Visão e Valores"
+                    >Missão, Visão e Valores</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/lojas"
+                    title="Nossas Lojas"
+                    >Nossas Lojas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter/premios-e-certificacoes"
+                    title="Prêmios e Certificações"
+                    >Prêmios e Certificações</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__nav--link" href="/blog" title="Blog"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="/conheca-a-inter/sala-de-imprensa"
+                    title="Sala de Imprensa"
+                    >Sala de Imprensa</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__grid--item">
+            <p class="footer__nav--title accordion">Clientes</p>
+            <nav class="footer__nav panel">
+              <ul>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Boleto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Assistência Técnica</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Negociar Minhas Parcelas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Evolução de Obra</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Portal do Cliente</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__nav--link"
+                    href="https://experterp.com.br/inter/relacionamento2.0/"
+                    >Documentação</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="social-mobile-nav">
+              <hr class="dashed-line" />
+              <h3 class="socials_title">
+                Siga a Inter Construtora<br />nas redes sociais
+              </h3>
+              <nav class="socials_nav">
+                <a
+                  class="socials_nav-link"
+                  href="https://www.facebook.com/interconstrutora"
+                  ><span class="icon-facebook i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://pt.linkedin.com/company/interconstrutora"
+                  ><span class="icon-linkedin i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://www.instagram.com/interconstrutora"
+                  ><span class="icon-instagram i-22"></span
+                ></a>
+                <a
+                  class="socials_nav-link"
+                  href="https://www.youtube.com/channel/UC5LZ0kqIQU1tF1plHLVdlSQ"
+                  ><span class="icon-youtube i-22"></span
+                ></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
