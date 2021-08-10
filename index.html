@@ -10,6 +10,24 @@
     />
     <title>Document</title>
     <style>
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        overflow-x: auto;
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
       .mobile-only {
         display: none;
       }
@@ -18,12 +36,20 @@
           display: flex !important;
           align-items: center;
         }
+        .header-search {
+          position: sticky;
+          top: 0;
+        }
       }
 
       @media only screen and (max-width: 768px) {
         .header {
           height: auto;
+          position: fixed;
+          top: 0;
+          z-index: 999;
         }
+
         .header .navbar-orange .navbar-header {
           width: 100% !important;
         }
@@ -196,6 +222,7 @@
         }
         .header-search {
           height: calc(100vh - 52px);
+          top: 54px;
         }
         .header-search__items {
           flex-direction: column;
@@ -227,7 +254,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="main-body">
     <header class="header">
       <nav class="navbar navbar-orange">
         <div class="header__container">
@@ -362,16 +389,22 @@
         </div>
       </div>
     </div>
+    <div class="scroll-testing-div" style="height: 1000px; background: red">
+      Please delete me
+    </div>
     <script>
       var x = document.getElementById("bs-example-navbar-collapse-1");
       var y = document.getElementById("bs-example-search-collapse-1");
+      var body_selector = document.getElementById("main-body");
       function hamburgerToggle() {
         x.classList.toggle("in");
         var z = document.getElementById("navbar-toggler-button");
         z.classList.toggle("toggled");
+        body_selector.classList.toggle("no-scroll");
       }
       function searchToggle() {
         y.classList.toggle("hide-search");
+        body_selector.classList.toggle("no-scroll");
       }
     </script>
   </body>
