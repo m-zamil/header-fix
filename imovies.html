@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://inter.kanudigital.com/assets/5d46d5c3/css/styles.min.css?v=1628608363"
+    />
+    <style>
+      @media only screen and (max-width: 768px) {
+        .search--subtitle {
+          padding: 0px 15px;
+        }
+        .search__types.hide-toggle {
+        }
+        .search__types {
+          margin-bottom: 20px;
+        }
+        .search__types.hide-toggle .nav-pills > li:first-child {
+          margin-left: 0;
+        }
+        .search__types .search__container ul {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 5px;
+        }
+
+        .search-filter {
+          padding: 0 15px;
+          margin-top: 25px;
+        }
+        .search-filter .form-control {
+          height: 44px;
+          margin-bottom: 20px;
+        }
+        .more-filter-button {
+          font-family: Roboto;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #ff7300;
+          cursor: pointer;
+          margin-bottom: 20px;
+          user-select: none;
+        }
+        .btn-search {
+          background-color: #ff7300;
+          height: 45px;
+          color: #fff;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 25px;
+        }
+        .btn-search:hover {
+          color: #fff;
+        }
+        .btn-search::before {
+          background-image: url(https://www.interconstrutora.com/assets/732a2fe0/images/icons/search.svg);
+          content: "";
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+        }
+        .search-button {
+          padding: 0 15px;
+        }
+        .search__types {
+          display: none;
+        }
+        .search__types .nav-pills > li:first-child {
+          margin: 0 5px 0 5px;
+        }
+        .search__types .nav-pills > li::before {
+          content: "";
+        }
+      }
+      .arrow_forward_icon {
+        background-image: url(https://www.interconstrutora.com/assets/732a2fe0/images/icons/arrow_forward.svg);
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        line-height: 1;
+        height: 11px;
+        width: 7px;
+        margin-left: 5px;
+      }
+      .breadcrumbs {
+        padding: 15px;
+        padding-top: 20px;
+        align-items: center;
+      }
+      .breadcrumbs--link {
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+      }
+      .breadcrumbs--link:hover {
+        text-decoration: none;
+        color: #ff7300;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="search">
+      <div class="breadcrumbs">
+        <a class="breadcrumbs--link" href="/">Home </a>
+        <span class="arrow_forward_icon"></span>
+        <a class="breadcrumbs--link" href="/imoveis">
+          &nbsp;Encontre seu Apartamento</a
+        >
+      </div>
+      <div class="search__header">
+        <div class="search__container">
+          <h1 class="search--title">Imóveis</h1>
+          <div class="search--subtitle desktop">
+            <p class="result__title">
+              Foram encontados: <span class="result__amount">28 Imóveis</span>
+            </p>
+          </div>
+        </div>
+        <div class="search-filter mobile">
+          <div class="row">
+            <div class="col-md-4">
+              <select
+                name="search-filter-header-state"
+                class="form-control search-filter-header-state"
+                id="search-filter-header-state"
+              >
+                <option value="">Todos os Estados</option>
+                <option value="sp">São Paulo (SP)</option>
+                <option value="mg">Minas Gerais (MG)</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select
+                name="search-filter-header-city"
+                class="form-control search-filter-header-city"
+                id="search-filter-header-city"
+              >
+                <option value="">Cidade</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select
+                name="search-filter-header-neighborhood"
+                class="form-control search-filter-header-neighborhood"
+                id="search-filter-header-neighborhood"
+              >
+                <option value="">Bairro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="more-filter-button mobile"
+        id="more-filter-button"
+        onclick="toggleFilter()"
+      >
+        Mais filtros +
+      </div>
+      <div class="search__types" id="search__types">
+        <div class="search__container">
+          <ul id="w0" class="nav-pills nav">
+            <li>
+              <a
+                href="/imoveis?state=todos-os-estados&amp;city=todas-as-cidades&amp;type=todos-os-tipos-de-imoveis&amp;neighborhood=todos-os-bairros&amp;fase="
+                >Todos</a
+              >
+            </li>
+            <li>
+              <a
+                href="/imoveis?state=todos-os-estados&amp;city=todas-as-cidades&amp;type=todos-os-tipos-de-imoveis&amp;neighborhood=todos-os-bairros&amp;fase=lancamento"
+                >Lançamentos</a
+              >
+            </li>
+            <li>
+              <a
+                href="/imoveis?state=todos-os-estados&amp;city=todas-as-cidades&amp;type=todos-os-tipos-de-imoveis&amp;neighborhood=todos-os-bairros&amp;fase=em-contrucao"
+                >Em Construção</a
+              >
+            </li>
+            <li>
+              <a
+                href="/imoveis?state=todos-os-estados&amp;city=todas-as-cidades&amp;type=todos-os-tipos-de-imoveis&amp;neighborhood=todos-os-bairros&amp;fase=imovel-pronto"
+                >Prontos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search-button mobile">
+        <button
+          type="submit"
+          class="btn btn-search btn-block search-filter-submit"
+        >
+          Pesquisar
+        </button>
+      </div>
+
+      <div class="search--subtitle mobile">
+        <p class="result__title">
+          Foram encontratos: <span class="result__amount">4 Imóveis</span>
+        </p>
+      </div>
+    </section>
+    <script>
+      const more_btn = document.getElementById("more-filter-button");
+      const search_filters = document.getElementById("search__types");
+      function toggleFilter() {
+        search_filters.classList.toggle("show");
+        if (search_filters.classList.contains("show")) {
+          more_btn.textContent = "Menos filtros -";
+        } else {
+          more_btn.textContent = "Mais filtros +";
+        }
+      }
+    </script>
+  </body>
+</html>
